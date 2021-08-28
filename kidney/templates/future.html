@@ -1,0 +1,57 @@
+ <html>
+<head>
+<style>
+ 
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: red;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+ .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+ 
+</style>
+</head>
+<body>
+
+<div>
+  <h1>Conclusion and Future Work</h1>
+  <p>The proposed CKD diagnostic methodology is feasible in
+terms of data imputation and samples diagnosis. After unsupervised imputation of missing values in the data set by
+using KNN imputation, the integrated model could achieve
+a satisfactory accuracy. Hence, we speculate that applying
+this methodology to the practical diagnosis of CKD would
+achieve a desirable effect. In addition, this methodology
+might be applicable to the clinical data of the other diseases
+in actual medical diagnosis. However, in the process of establishing the model, due to the limitations of the conditions,
+the available data samples are relatively small, including only
+400 samples. Therefore, the generalization performance of
+the model might be limited. In addition, due to there are
+only two categories (ckd and notckd) of data samples in the data set, the model can not diagnose the severity of CKD.
+In the future, a large number of more complex and representative data will be collected to train the model to improve
+the generalization performance while enabling it to detect the
+severity of the disease. We believe that this model will be
+more and more perfect by the increase of size and quality of
+the data.</P>
+ 
+  
+</div>
+ <input type="button" class="button" onclick="window.location.href='{{url_for('first')}}';" value="HOME" />
+</body>
+</html>
